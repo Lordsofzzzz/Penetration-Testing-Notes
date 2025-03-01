@@ -1,0 +1,37 @@
+site_name: Cybersecurity Notes
+site_url: https://your-cloudflare-pages-url/
+theme:
+  name: material
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - navigation.indexes
+    - toc.integrate
+    - search.highlight
+    - search.share
+  palette:
+    scheme: slate
+    primary: blue
+    accent: cyan
+nav:
+  - Home: index.md
+  - Offensive Security:
+      - Penetration Testing: offensive/pen_testing.md
+      - Red Teaming: offensive/red_team.md
+  - Defensive Security:
+      - Firewalls: defensive/firewalls.md
+      - IDS/IPS: defensive/ids_ips.md
+  - Cryptography:
+      - Encryption: crypto/encryption.md
+      - Hashing: crypto/hashing.md
+  - Tools:
+      - Nmap: tools/nmap.md
+      - Wireshark: tools/wireshark.md
+plugins:
+  - search
+  - social
+  - tags
+
+extra:
+  github_repo: "https://github.com/yourusername/cybersecurity-notes"
+  custom_domain: "yourcustomdomain.com"
